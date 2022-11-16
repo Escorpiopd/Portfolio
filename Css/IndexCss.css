@@ -1,0 +1,300 @@
+/*MAIN CSS*/
+@font-face {
+    font-family: 'Fredoka';
+    src: url('../Fonts/Fredoka/Fredoka-VariableFont_wdth\,wght.ttf');
+}
+
+*{
+    font-family: 'Fredoka', cursive;
+    margin: 0% auto;
+    padding: 0% auto;
+    box-sizing: border-box;
+}
+
+
+/*Body CSS*/
+body{
+    background-image: url(../Imgs/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Header CSS*/
+#HeadBtnZ{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    padding-right: 10px;
+    border-radius: 20px;
+    justify-content: center;
+    border: 0px solid;
+    border-top: 2px rgba(0, 0, 0, 0.011) solid;
+    border-bottom: 2px black solid;
+    background-color: #ffffff00;
+    font-size: larger;
+}
+
+#HeadBtnZ:hover {
+    border-top: 2px white solid;
+    border-bottom: 0px solid;
+    animation-name: btnAn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btnAn {
+    from{
+        
+    }to{
+        filter: drop-shadow(0 0 25px white);
+        background-color: #00000046;
+    }
+}
+
+#content{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#MainOption{
+    margin-left: 5px;
+}
+
+#MainOption a{
+    text-decoration: none;
+    color: black;
+}
+#MainOption abbr{
+    text-decoration: none;
+}
+
+#MainOption:hover{
+    animation-name: MainOpcAn;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes MainOpcAn {
+    from{
+
+    }to{
+        filter: drop-shadow(0 0 15px white);
+    }
+}
+
+.cabecera{
+    width: 70%;
+    border-radius: 0px 0px 50px 50px;
+    background-color: #ff2e2eB3;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.cabecera h1{
+    padding-left: 400px;
+}
+
+/*MarcaPaginas CSS*/
+#mp{
+    margin-top: -100px;
+    float: left;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 10%;
+}
+
+#mp:hover{
+    animation-name: mpAn;
+    animation-fill-mode: forwards;
+
+}
+@keyframes mpAn {
+    0%{
+    }
+    100%{
+        height: 25vh;
+    }
+}
+
+/*ReurnBtn CSS*/
+.returnBtn{
+    margin-top: 30px;
+    margin-right: 30px;
+    position: -webkit-sticky;
+    position: sticky ;
+    top: 30px;
+    float: right;
+}
+
+.returnBtn a{
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: transparent;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px rgba(225, 225, 225, 0.5);
+}
+
+.returnBtn a::before{
+    content: attr(data-text);
+    position: absolute;
+    color: transparent;
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 4px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+.returnBtn a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+/*Contenido CSS*/
+.infoA{
+    color: white;
+    margin: 200px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.BoxZ{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#Box1, #Box2, #Box3{
+    padding: 20px;
+    width: 50%;
+    border: 4px white solid;
+    border-radius: 20px;
+    letter-spacing: 2px;
+
+}
+
+#data{
+    margin-top: 15px;
+}
+
+#data ul{
+    margin-top: -15px;
+    margin-left: -50px;
+    list-style: none;
+}
+
+#data ul ol{
+    margin-left: -30px;
+}
+
+#data ul li{
+    margin-top: 20px;
+}
+
+#Box1{
+    margin-right: 30px;
+}
+
+#Box2{
+    margin-left: 30px;
+}
+
+.infoB{
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoB h1{
+    margin-top: -130px;
+    margin-bottom: 50px;
+}
+
+#Box3{
+    display: flex;
+    flex-direction: row;
+}
+
+#Box3 .a{
+    margin-bottom: 30px;
+}
+
+#TxtImgA, #TxtImgB, #TxtImgC, #TxtImgD, #TxtImgE, #TxtImgF{
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+#TxtImgA:hover, #TxtImgB:hover, #TxtImgC:hover, #TxtImgD:hover, #TxtImgE:hover, #TxtImgF:hover{
+    animation-name: saturation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes saturation {
+    from{
+    }to{
+        filter: contrast(150%);
+        filter: brightness(150%);
+    }
+}
+
+#TxtImgA h2, #TxtImgB h2, #TxtImgC h2, #TxtImgD h2, #TxtImgE h2, #TxtImgF h2{
+    background-color: #ff00007a;
+    padding: 2px;
+    width: 35%;
+    border-radius: 20px 0px 20px 0px;
+}
+
+#b{
+    margin-right: -60px;
+}
+
+#TxtImgA img{
+    margin-top: 10px;
+    width: 50%;
+}
+
+#TxtImgB img{
+    margin-top: 10px;
+    width: 70%;
+}
+
+#TxtImgC img{
+    margin-top: 10px;
+    width: 70%;
+}
+
+#TxtImgD img{
+    margin-top: 10px;
+    width: 40%;
+}
+
+#TxtImgE img{
+    margin-top: 10px;
+    width: 35%;
+}
+
+#TxtImgF img{
+    margin-top: 10px;
+    width: 30%;
+}
